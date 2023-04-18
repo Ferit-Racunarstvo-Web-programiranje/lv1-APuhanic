@@ -1,12 +1,114 @@
 <!DOCTYPE html>
-<html lang="hr">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ivana Ivanić</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
 </head>
+
 <body>
-    <h1><?= "Hello LV1 task" ?></h1>
+    <header>
+        <img src="images/logo.png" alt="Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">About me</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+            </ul>
+        </nav>
+        <button class="contact-btn">Contact me</button>
+    </header>
+    <div class="intro">
+        <div class="intro-content">
+            <div class=introText>
+                <h1>Hi, I'm <span class="name">John Doe</span></h1>
+                <h2>Web Developer</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+            </div>
+            <div class="intro-image">
+                <img src="path-to-image" alt="image description">
+                <p>asdas</p>
+            </div>
+        </div>
+    </div>
+    <div class="my-skills">
+        <h1>My Expertise</h1>
+        <div class=" skill-cards">
+            <div class="skill">
+                <img src="path-to-image" alt="image description">
+                <h2>Strategy & Direction</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+            </div>
+            <div class="skill">
+                <img src="path-to-image" alt="image description">
+                <h2>Branding & Logo</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+            </div>
+            <div class="skill">
+                <img src="path-to-image" alt="image description">
+                <h2>UI & UX Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+            </div>
+            <div class="skill">
+                <img src="path-to-image" alt="image description">
+                <h2>Webflow Development</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+            </div>
+        </div>
+    </div>
+    <div class="about-me">
+        <div class="about-me-content">
+            <div class="about-me-image">
+                <img src="path-to-image" alt="image description">
+                <p>asdas</p>
+            </div>
+            <div class="about-me-text">
+                <h3>About</h3>
+                <h2>About me</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="recent-projects">
+        <div class="recent-projects-header">
+            <h1>My portfolio</h1>
+            <button> Visit my Dribble</button>
+        </div>
+        <div class="portfolio-cards">
+            <div class="card">
+                <img src="image.jpg" alt="Image">
+                <div class="text">
+                    <h2>Card Title</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, tellus id fermentum
+                        bibendum, ex enim lacinia sapien, quis dapibus lacus felis vitae quam.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="image.jpg" alt="Image">
+                <div class="text">
+                    <h2>Card Title</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, tellus id fermentum
+                        bibendum, ex enim lacinia sapien, quis dapibus lacus felis vitae quam.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="image.jpg" alt="Image">
+                <div class="text">
+                    <h2>Card Title</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, tellus id fermentum
+                        bibendum, ex enim lacinia sapien, quis dapibus lacus felis vitae quam.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>

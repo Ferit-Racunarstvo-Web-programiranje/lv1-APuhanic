@@ -1,0 +1,92 @@
+:root {
+  --primary-color: #5e3bee;
+  --secondary-color: #282938;
+  --accent-color: #f5fcff;
+  --highlight-color: #e62872;
+  --text-color: #1c1e53;
+
+  --font-size-body: 16px;
+  --font-size-h1: 2.5rem;
+  --font-size-h2: 2rem;
+  --font-size-h3: 1.5rem;
+}
+
+body {
+  background-color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: var(--font-size-body);
+  line-height: 1.42857143;
+  margin: 0;
+}
+nav {
+  text-align: center;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--accent-color);
+}
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav li:last-child {
+  margin-right: 0;
+}
+
+.intro {
+  background-color: lightblue;
+}
+.intro-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: lightblue;
+  margin: 2rem;
+}
+.skill-cards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+}
+.my-skills {
+  margin: 2rem;
+}
+.about-me {
+  background-color: lightblue;
+}
+.about-me-content {
+  margin: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.recent-projects {
+  margin: 2rem;
+}
+.recent-projects-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.recent-projects-header h1 {
+  margin-right: auto;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.5);
+  border: none;
+  overflow: hidden;
+  max-width: 25vw;
+}
+.portfolio-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
