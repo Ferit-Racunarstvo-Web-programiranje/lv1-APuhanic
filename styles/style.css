@@ -3,7 +3,7 @@
 :root {
   --primary-color: #5e3bee;
   --secondary-color: #282938;
-  --accent-color: #c2e8f8;
+  --accent-color: #e0edf3;
   --highlight-color: #e62872;
   --text-color: #1c1e53;
 
@@ -61,7 +61,9 @@ nav ul {
 
 .intro {
   background-color: var(--accent-color);
+  box-shadow: inset 0px 22px 22px -22px rgba(0, 0, 0, 0.1);
 }
+
 .text {
   font-size: 1.2rem;
 }
@@ -96,23 +98,68 @@ nav ul {
 .skill-cards {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  justify-content: center;
+  align-items: space-between;
   background-color: white;
 }
 .my-skills {
-  margin: 2rem;
+  margin-top: 8rem;
+  margin-left: 4rem;
+  margin-bottom: 8rem;
+  margin-right: 4rem;
 }
-.about-me {
-  background-color: lightblue;
+.my-skills h1 {
+  margin-bottom: 3rem;
 }
+.skill {
+  background-color: var(--accent-color);
+  margin: 1rem;
+  padding: 1rem;
+  width: 18em;
+  height: 15em;
+  border-radius: 10px;
+}
+.skill img {
+  scale: 0.7;
+  background-color: white;
+  padding: 0.6rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
 .about-me-content {
-  margin: 2rem;
   display: flex;
-  flex-direction: row;
+  flex-direction: center;
   align-items: center;
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+.about-me-image img {
+  width: 40rem;
+}
+.about-me-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
+}
+.about-me-text {
+  flex: 1;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 .recent-projects {
-  margin: 2rem;
+  margin-top: 8rem;
+  margin-left: 4rem;
+  margin-bottom: 8rem;
+  margin-right: 4rem;
 }
 .recent-projects-header {
   display: flex;
@@ -121,6 +168,7 @@ nav ul {
 }
 .recent-projects-header h1 {
   margin-right: auto;
+  margin-left: 2rem;
 }
 .card {
   display: flex;
@@ -129,12 +177,17 @@ nav ul {
   box-shadow: 0 0 24px rgba(0, 0, 0, 0.5);
   border: none;
   overflow: hidden;
-  max-width: 25vw;
+  border-radius: 15px;
+  max-width: 27vw;
+}
+.card-text {
+  padding: 2rem;
 }
 .portfolio-cards {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
+  margin-top: 5rem;
 }
 a {
   text-decoration: none;
@@ -160,4 +213,56 @@ button a {
   padding: 1.3rem;
   text-align: center;
   font-size: 1.3rem;
+}
+.testimonials-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 5rem;
+}
+.customer-testimonials {
+  background-color: var(--accent-color);
+  padding-top: 10rem;
+  margin-top: 8rem;
+  padding-bottom: 10rem;
+}
+.customer-testimonials-content {
+  margin-right: 5rem;
+  margin-left: 5rem;
+}
+.customer{
+  display: flex;
+  flex-direction: row;
+}
+.customer-card{
+  flex: 1;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 3px solid #006B6A;
+}
+.avatar-image{
+  width: 8rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  margin-right: 2rem;
+}
+.star-image{
+  width: 30%;
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+.customer-text{
+  padding-top: 1.5rem;
+}
+.customer-text p{
+  margin-top: 0.5rem;
+  font-size: 1.4rem;
+}
+.contact-conent{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
 }
