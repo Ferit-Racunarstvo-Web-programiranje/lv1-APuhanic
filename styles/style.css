@@ -8,9 +8,9 @@
   --text-color: #1c1e53;
 
   --font-size-body: 25px;
-  --font-size-h1: 3.5rem;
-  --font-size-h2: 2rem;
-  --font-size-h3: 1.5rem;
+  --font-size-h1: 70px;
+  --font-size-h2: 50px;
+  --font-size-h3: 35px;
 }
 
 body {
@@ -41,22 +41,18 @@ header {
   align-items: center;
   padding: 1rem;
 }
-header button {
-  margin-right: 3rem;
-}
+
 nav {
   text-align: center;
   margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
-nav li {
-  display: inline-block;
-  margin-right: 20px;
-  margin-left: 20px;
-}
-
-nav ul {
-  margin: 0;
-  padding: 0;
+nav a {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .intro {
@@ -72,9 +68,9 @@ nav ul {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding-top: 5rem;
+  padding-top: 5vw;
   padding-bottom: 5rem;
-  margin-left: 4rem;
+  margin-left: 10%;
   margin-right: 4rem;
 }
 .intro-image {
@@ -93,6 +89,7 @@ nav ul {
 }
 .random-guy-image {
   object-fit: contain;
+  max-width: 90%;
 }
 
 .skill-cards {
@@ -114,10 +111,9 @@ nav ul {
 .skill {
   background-color: var(--accent-color);
   margin: 1rem;
-  padding: 1rem;
-  width: 18em;
-  height: 15em;
+  width: 90%;
   border-radius: 10px;
+  padding: 1rem;
 }
 .skill img {
   scale: 0.7;
@@ -133,15 +129,14 @@ nav ul {
   align-items: center;
   justify-content: center;
 
-  flex-wrap: wrap;
-
   padding-top: 5rem;
   padding-bottom: 5rem;
   margin-left: 4rem;
   margin-right: 4rem;
 }
 .about-me-image img {
-  width: 40rem;
+  width: 90%;
+  height: 90%;
 }
 .about-me-image {
   flex: 1;
@@ -174,14 +169,19 @@ nav ul {
   display: flex;
   flex-direction: column;
   background-color: white;
-  box-shadow: 0 0 24px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
   border: none;
   overflow: hidden;
   border-radius: 15px;
-  max-width: 27vw;
+  margin: 1.5rem;
+  font-size: 2rem;
 }
 .card-text {
-  padding: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.card-text p {
+  font-size: 1.5rem;
 }
 .portfolio-cards {
   display: flex;
@@ -230,39 +230,184 @@ button a {
   margin-right: 5rem;
   margin-left: 5rem;
 }
-.customer{
+.customer {
   display: flex;
   flex-direction: row;
 }
-.customer-card{
+.customer-card {
   flex: 1;
   margin: 1rem;
   padding: 1rem;
   border-radius: 10px;
-  border: 3px solid #006B6A;
+  border: 3px solid #006b6a;
 }
-.avatar-image{
+.avatar-image {
   width: 8rem;
+  height: 8rem;
   margin-left: 1rem;
   margin-bottom: 1rem;
   margin-right: 2rem;
 }
-.star-image{
+.star-image {
   width: 30%;
   padding-top: 1rem;
   padding-left: 1rem;
 }
-.customer-text{
+.customer-text {
   padding-top: 1.5rem;
 }
-.customer-text p{
+.customer-text p {
   margin-top: 0.5rem;
   font-size: 1.4rem;
 }
-.contact-conent{
+
+.contact-content {
+  padding-top: 10rem;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 10rem;
+}
+.contact-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-header h2 {
+  margin: 0;
+}
+
+.contact-form input,
+textarea {
+  font-size: var(--font-size-h3);
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
+}
+.form-1st-row,
+.form-second-row {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  margin-top: 8rem;
-  margin-bottom: 8rem;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+.form-fourth-row,
+.form-third-row {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+}
+select {
+  font-size: 1.5rem;
+  width: 100%;
+  padding: 0.5rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
+  color: var(--primary-color);
+}
+textarea {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.submit-button {
+  display: block;
+  margin: 0 auto;
+  color: white;
+  font-size: 2rem;
+  background-color: var(--primary-color);
+  padding: 1em 1em;
+  border-radius: 5px;
+}
+.footer {
+  background-color: var(--accent-color);
+}
+.footer-links {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.links img {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+}
+.footer-nav-links a {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 1.5rem;
+}
+.legal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-size: 1rem;
+}
+.legal-links a {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.footer hr {
+  width: 90%;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 1200px) {
+  .skill-cards,
+  .intro-content,
+  .about-me-content,
+  .portfolio-cards,
+  .testimonials-cards,
+  .form-1st-row,
+  .form-second-row,
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .about-me-image img {
+    width: 50%;
+    height: 50%;
+  }
+  .card {
+    width: 60%;
+    height: 60%;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  nav a {
+    margin-top: 0.3rem;
+  }
+  header button {
+    margin-top: 1rem;
+    scale: 0.7;
+  }
+  .random-guy-image {
+    object-fit: contain;
+    max-width: 60%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
 }
