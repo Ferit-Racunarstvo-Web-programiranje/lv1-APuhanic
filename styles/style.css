@@ -363,6 +363,35 @@ textarea {
   width: 90%;
   margin: 0 auto;
 }
+.dribble-button {
+  background-color: var(--highlight-color);
+  color: white;
+  border: 1px solid var(--highlight-color);
+  width: 15rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.dribble-image {
+  width: 15%;
+}
+.dribble-text {
+  padding-top: 0.3rem;
+  font-size: 1.3rem;
+
+}
+.view-in-dribble {
+  padding-top: 0.3rem;
+  font-size: 1.3rem;
+  border: none;
+  border-bottom: 2px solid var(--primary-color);
+  margin-bottom: 1rem;
+  color: black;
+  font-weight: 600;
+}
+.vector {
+  padding-left: 0.5rem;
+}
 @media only screen and (max-width: 1200px) {
   .skill-cards,
   .intro-content,
